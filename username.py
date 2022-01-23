@@ -23,8 +23,8 @@ class UserName:
             raise ValueError(f'{name}はルール違反です')
         self.name = name
 
-    def upper_name(self):
-        # .upper()で大文字にする。
+    def battle_name(self):
+        # 「upper()」で大文字にする。
         return self.name.upper()
 
 
@@ -32,5 +32,5 @@ class UserName:
 bob = UserName(name='Bob Smith')
 
 print(bob.name)
-# bobに「upper_name()」関数を使って大文字にする。
-print(bob.upper_name())
+# bobに「screen_name()」関数を使って大文字にする。
+print(bob.battle_name())
